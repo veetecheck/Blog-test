@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #333333;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+a {
+    color: inherit;
+}
+footer {
+    background-color: #222222;
+}
+h1 {
+    font-size: 28px;
+    font-weight: 400;
+}
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.container {
+    margin: 0 auto 0 auto;
+    width: 1440px;
+}
+.text-muted {
+    color: rgba(255, 255, 255, 0.5);
+}
+.article-big-text {
+    position: absolute;
+    bottom: 80px;
+    left: 64px;
+    width: 454px;
+}
+.article-small-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 325px;
+}
+.article-text-positioning {
+    position: relative;
+    text-align: left;
+    scale: 1;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.article-text-positioning:hover {
+    scale: 1.03;
+}
+.smaller-text {
+    font-size: 14px;
+}
+.gradient-mask-big {
+    width: 960px;
+    height: 256px;
+    background: transparent linear-gradient(180deg, #33333300 0%, #000000 100%) 0% 0% no-repeat padding-box;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.gradient-mask-small {
+    width: 460px;
+    height: 200px;
+    background: transparent linear-gradient(180deg, #33333300 0%, #000000 100%) 0% 0% no-repeat padding-box;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+.badge-travel, .badge-tech {
+    width: 96px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+}
+.badge-travel {    
+    color: #000000;
+    background-color: #84FAB0; 
+}
+.badge-tech {
+    color: #fff;
+    background-color: #7028E4;
+}
+.article-big-badge {
+    top: 48px;
+    left: 64px;
+}
+.article-small-badge {
+    top: 24px;
+    left: 40px;
+}
+
+/*--header--*/
+#side-nav {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222222;
+    overflow-x: hidden;
+    padding-top: 40px;
+    transition: 0.5s;
+}
+#side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+#side-nav a:hover {
+    color: #f1f1f1;
+}
+#logo-nav {
+    width: 184px;
+    margin: 25px;
+}
+#menu-btn-closing {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+}
+#menu-btn-closing img {
+    filter: invert(100%);
+    width: 100%;
+}
+#menu-btn-closing:hover {
+    cursor: pointer;
+}
+#header-container {  
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#nav-ico {
+    width: 36px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+#search-ico {
+    width: 32px;
+    filter: invert(100%);
+}
+#logo-header {
+    width: 184px;
+}
+
+/*--main--*/
+#side-icons-container {
+    position: sticky;
+    top: 0;
+}
+#side-icons {
+    position: relative;
+}
+#side-icons img {
+    position: absolute;
+    height: 20px;
+    filter: invert(80%);
+}
+#ico-facebook {
+    top: 20px;
+    left: 83px;
+}
+#ico-twitter {
+    top: 64px;
+    left: 80px;
+}
+#ico-instagram {
+    top: 108px;
+    left: 80px;
+}
+#ico-share {
+    top: 152px;
+    left: 80px;
+}
+.main-flex-row {
+    height: 588px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space between;
+}
+#main-container {
+    margin-bottom: 102px;
+}
+/*--the 1st row--*/
+#article1 img {
+   width: 960px; 
+   height: 100%;
+   margin-right: 20px;
+}
+#death-star {
+    width: 460px;
+    height: 100%;
+    background: transparent linear-gradient(155deg, #E5B2CA 0%, #7028E4 100%) 0% 0% no-repeat padding-box;
+    position: relative;
+    text-align: center;
+}
+#death-star img {
+    width: 281px;
+    position: absolute;
+    top: 81px;
+    left: 90px;
+}
+#death-star-text {
+    position: absolute;
+    bottom: 80px;
+    left: 73px;
+    width: 314px;
+}
+#death-star-text h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+/*--the 2nd row--*/
+#main-2nd-row-col {
+    height: 100%;
+    width: 460px;
+}
+#article2, #article3 {
+    height: 50%;
+}
+#article2 img {
+    width: 100%;
+    height: 284px;
+    margin-bottom: 10px;
+}
+#article3 img {
+    width: 100%;
+    height: 284px;
+    margin-top: 10px;
+}
+#article4 img {
+    width: 960px;
+    height: 100%;
+    margin-left: 20px;
+}
+#article4 div {
+    margin-left: 20px;
+}
+#article3 .article-big-text {
+    bottom: 30px;
+}
+#article3 .gradient-mask-small {
+    bottom: 0;
+}
+#article3 .article-small-badge {
+    top: 34px;
+}
+
+/*--footer--*/
+#footer-container {
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo-foot {
+    width: 98px;
+}

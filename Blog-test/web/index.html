@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <title>Testovací úloha - Vít Hrtus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Čas strávený kódováním 10 hodin. Na responzivitu webu jsem si bral vždy na pomoc 
+        Bootstrap, zde by mi moc nepomohl. S Gulp nemám zkušenosti, se Sass letmo ano. Z časově úsporných důvodů jsem 
+        psal rovnou CSS.">
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="side-nav">
+            <div id="side-nav-container">
+                <div id="menu-btn-closing" onclick="closeNav()">
+                    <img src="../_src/close.svg" alt="closing_btn">        
+                </div>
+                <img id="logo-nav" src="../_src/logo.svg" alt="logo_nav">
+                <a href="#">Lorem</a>
+                <a href="#">Ipsum</a>
+                <a href="#">Dolor</a>
+                <a href="#">Sit</a>
+                <a href="#">Amet</a>
+            </div>
+        </div>
+        <div id="header-container" class="container">
+            <div id="nav-ico" onclick="openNav()">
+                <img src="../_src/bars-solid.svg" alt="nav_icon">
+            </div>
+            <div id="logo-header">
+                <img src="../_src/logo.svg" alt="logo">
+            </div>
+            <div id="search-ico">
+                <img src="../_src/magnifying-glass-solid.svg" alt="search_icon">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="side-icons-container">
+            <div id="side-icons">
+                <img id="ico-facebook" src="../_src/facebook-f-brands.svg" alt="facebook_ico">
+                <img id="ico-twitter" src="../_src/twitter-brands.svg" alt="twitter_ico">
+                <img id="ico-instagram" src="../_src/instagram-brands.svg" alt="instagram_ico">
+                <img id="ico-share" src="../_src/share-alt-solid.svg" alt="share_ico">
+            </div>
+        </div>
+        <div id="main-container" class="container">
+            <div id="main-1st-row" class="main-flex-row">       
+                    <div id="article1" class="article-text-positioning" onclick="writeInfo(this)">
+                        <a href="#">
+                            <img src="../_src/article1.jpg" alt="mountains">
+                            <div class="badge-travel article-big-badge">TRAVEL</div>
+                            <div class="gradient-mask-big"></div>
+                            <div class="article-big-text">
+                                <h1>Etiam quis quam. Nemo enim ipsam voluptatem quia</h1>
+                                <p class="text-muted">May 25, 2048 / 9 min.</p>
+                            </div>
+                        </a>
+                    </div>
+                <div id="death-star">
+                    <img src="../_src/space-station-moon-alt-duotone.svg" alt="death_star">
+                    <div id="death-star-text">
+                        <h1>Discover content<br>from different universe</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="main-2nd-row" class="main-flex-row">
+                <div id="main-2nd-row-col">
+                    <div id="article2" class="article-text-positioning" onclick="writeInfo(this)">
+                        <a href="#">
+                            <img src="../_src/article2.jpg" alt="ice">
+                            <div class="badge-travel article-small-badge">TRAVEL</div>
+                            <div class="gradient-mask-small"></div>
+                            <div class="article-small-text">
+                                <h2>Etiam quis quam. Nemo enim ipsam voluptatem quia</h2>
+                                <p class="text-muted smaller-text">January 10, 2048 / 4 min.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="article3" class="article-text-positioning" onclick="writeInfo(this)">
+                        <a href="#">
+                            <img src="../_src/article3.jpg" alt="laptop">
+                            <div class="badge-tech article-small-badge">TECH</div>
+                            <div class="gradient-mask-small"></div>
+                            <div class="article-small-text">
+                                <h2>Etiam quis quam. Nemo enim ipsam voluptatem quia</h2>
+                                <p class="text-muted smaller-text">October 20, 2047 / 5 min.</p>
+                            </div>
+                        </a>
+                    </div>          
+                </div>
+                <div id="article4" class="article-text-positioning" onclick="writeInfo(this)">
+                    <a href="#">
+                        <img src="../_src/article4.jpg" alt="sea_infinity">
+                        <div class="badge-travel article-big-badge">TRAVEL</div>
+                        <div class="gradient-mask-big"></div>
+                        <div class="article-big-text">
+                            <h1>Etiam quis quam. Nemo enim ipsam voluptatem quia</h1>
+                            <p class="text-muted smaller-text">August 20, 2047 / 8 min.</p>
+                        </div>
+                    </a>   
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-container" class="container">
+            <div>
+                <p class="text-muted">All rights reserved. &copy;2048</p>
+            </div>
+            <div id="logo-foot">
+                <img src="../_src/logo.svg" alt="logo">
+            </div>
+        </div>
+    </footer>
+    <script src="./dist/script.js"></script>
+</body>
+</html>
+
